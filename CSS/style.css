@@ -1,0 +1,125 @@
+/*Navigation Bar Code from HW17*/
+
+.navigation li:nth-child(4),footer li:nth-child(4){
+    background: linear-gradient(45deg,red,rgb(115, 115, 214));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #373738;
+    text-align: right;
+
+}
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.name{
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    color: white;
+    padding-left: 25px;
+}
+.jw{
+    margin-top: 30px;
+}
+.Logo{
+    width: 23%;
+    padding: 0%;
+    text-align: center;
+}
+nav{
+    width: 73%;
+    padding: 1%;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    /* margin-left: auto; */
+}
+nav ul li{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    color: white;
+}
+
+
+/*My Skills CSS Code*/
+
+.flexContainer{
+    display: flex;
+    margin: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flexContainer > div  {
+    flex: 1;
+    margin: 0 5px;
+    width: 33%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.flexContainer > div > h3{
+    margin-top: 45px;
+}
+h1{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/*My Work CSS Code*/
+
+.workGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    /* grid-template-areas:
+    "myWork1"
+    "myWork2"
+    "myWork3"; */
+}
+.myWork1, .myWork2, .myWork3 {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.myWork1 img, .myWork2 img, .myWork3 img {
+    grid-auto-columns: 1;
+    grid-row: 1 / span 3;
+    width: 100%;
+    height: auto;
+}
+
+.myWork1 h4, .myWork2 h4, .myWork3 h4 {
+    margin: 0;
+}
+
+.myWork1 p, .myWork2 p, .myWork3 p {
+    margin: 0;
+}
+
+.myWork1 button, .myWork2 button, .myWork3 button {
+    margin-top: 10px;
+}
+
+.myWork h3 {
+    display: flex;
+    justify-content: center;
+}
