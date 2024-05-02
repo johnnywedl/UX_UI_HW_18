@@ -1,5 +1,8 @@
-/*Navigation Bar Code from HW17*/
+body{
+    background-color: #242121;
+}
 
+/*Navigation Bar Code from HW17*/
 .navigation li:nth-child(4),footer li:nth-child(4){
     background: linear-gradient(45deg,red,rgb(115, 115, 214));
     -webkit-background-clip: text;
@@ -10,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color: #373738;
+    background-color: #242121;
     text-align: right;
 
 }
@@ -24,7 +27,7 @@
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    color: white;
+    color: whitesmoke;
     padding-left: 25px;
 }
 .jw{
@@ -48,7 +51,7 @@ nav ul li{
     display: inline-block;
     vertical-align: top;
     margin-left: 20px;
-    color: white;
+    color: whitesmoke;
 }
 
 
@@ -61,6 +64,10 @@ nav ul li{
     padding: 10px;
     flex-direction: row;
     justify-content: space-between;
+    gap: 25px;
+    color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .flexContainer > div  {
     flex: 1;
@@ -78,8 +85,12 @@ nav ul li{
 }
 h1{
     margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
+    font-size: 40px;
+    color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*My Work CSS Code*/
@@ -88,38 +99,189 @@ h1{
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    /* grid-template-areas:
+    grid-template-areas:
     "myWork1"
     "myWork2"
-    "myWork3"; */
+    "myWork3";
 }
 .myWork1, .myWork2, .myWork3 {
     display: grid;
-    grid-template-columns: 15% 1fr;
+    grid-template-columns: 1fr 40%;
     grid-template-rows: auto auto;
     gap: 10px;
+    padding-right: 100px;
+    padding-bottom: 20px;
 }
 
 .myWork1 img, .myWork2 img, .myWork3 img {
+    display: grid;
     grid-auto-columns: 1;
     grid-row: 1 / span 3;
-    width: 100%;
+    width: 30%;
     height: auto;
+    padding-left: 275px;
 }
 
 .myWork1 h4, .myWork2 h4, .myWork3 h4 {
+    display: grid;
     margin: 0;
+    width: 90%;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-top: 100px;
+    color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .myWork1 p, .myWork2 p, .myWork3 p {
+    display: grid;
     margin: 0;
+    width: 90%;
+    text-align: center;
+    color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .myWork1 button, .myWork2 button, .myWork3 button {
-    margin-top: 10px;
+    margin-top: 20px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 150px;
+    color: #242121;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
 }
 
 .myWork h3 {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+@media only screen and (max-width:600px){
+    .navigation{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inline-block{
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .Logo {
+        width: 100%;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul li{
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .flexContainer > div {
+        width: 100%;
+    }
+
+    .myWork1 img, .myWork2 img, .myWork3 img {
+        padding-left: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .myWork1, .myWork2, .myWork3 {
+        padding-right: 0;
+    }
+    .myWork1 button, .myWork2 button, .myWork3 button {
+        margin-left: 0;
+    } 
+}
+
+
+    /* .navigation {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "Logo"
+        "inline-block";
+    }
+
+    .inline-block {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .Logo {
+        grid-area: Logo;
+    }
+
+    nav {
+        grid-area: Menu;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    .flexContainer > div {
+        width: 100%;
+    }
+
+    .myWork1,
+    .myWork2,
+    .myWork3 { 
+        grid-template-columns: auto;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas:
+        "Image"
+        "Title"
+        "Description"
+        "Button";
+        padding-right: 0;
+    }
+
+    .myWork1 img,
+    .myWork2 img,
+    .myWork3 img {
+        grid-area: Image;
+        padding-left: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .myWork1 h4,
+    .myWork2 h4,
+    .myWork3 h4 {
+        grid-area: Title;
+        margin-top: 0;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .myWork1 p,
+    .myWork2 p,
+    .myWork3 p {
+        grid-area: Description;
+        margin: 0;
+        text-align: center;
+    }
+
+    .myWork1 button,
+    .myWork2 button,
+    .myWork3 button {
+        grid-area: Button;
+        margin-left: 0;
+    } */
